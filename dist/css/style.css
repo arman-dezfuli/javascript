@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'iranSansBold';
+  src: url("../dist/font/iranSans/iranSans-bold.ttf") format("truetype"); }
+
+@font-face {
+  font-family: 'Roboto';
+  src: url("../dist/font/roboto/robotoLight.ttf") format("truetype"); }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  background: #F0F2F5; }
+
+body {
+  min-height: 100vh;
+  font-family: 'iranSans', Roboto;
+  font-size: 12px;
+  line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
+
+.section {
+  line-height: 2;
+  background: #fff;
+  padding: 1rem;
+  border-radius: 10px;
+  font-size: 1rem;
+  text-align: justify;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.section div input {
+  width: 200px;
+  height: 40px;
+  padding: 5 10px;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  font-family: iranSans;
+  margin: 10px;
+  box-shadow: 0 0 5px 1px rgba(214, 234, 248, 0.5);
+  border: 1px solid #333; }
+
+.section button {
+  margin-top: 10px;
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1.5rem;
+  color: #555;
+  font-family: iranSans;
+  border: 1px solid #333; }
+
+.section button:hover {
+  background: #fff; }
