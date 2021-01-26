@@ -1,49 +1,34 @@
-// var names = [
-//     "Arman",
-//     "Admin",
-//     "Kakashi"
-// ];
-// // names[0] = "6";
-// console.log(names);
-// var person = {
-//     name: "Arman",
-//     gmail: "arman0dh@gmail.com",
-//     age: 21,
-//     job: "Developer"
-// };
-// var show = person.gmail;
-// var show2 = person["job"] = "Front End Engineer";
-// console.log(show);
-// console.log(show2);
-var person = {
-    FirstName: "Arman",
-    lastName: "Dezfuli",
-    age: 21 ,
-    job: "Front-End Engineer",
-    skills: [
-        "HTML 5",
-        "CSS 3",
-        "JavaScript",
-        "SASS",
-        "Git",
-    ],
-    rank: function () {
-        if (skills.length >= 2) {
-            var y;
-            y = "Bronze";
-        }else if (skills.length > 4){
-            y = "Silver";
-        }else if (skills.length > 6) {
-            y = "Golden";
-        }else if (skills.length > 8) {
-            y = "Master"
-        }else if (skills.length < 2) {
-            y = "No rating";
-        }else{
-            y = "???";
+function addItame() {
+    var inputData;
+    inputData = document.getElementById("input").value;
+    if (inputData == "") {
+        alert("لطفا فید را پر کنید!");
+    }else{
+        document.getElementById("input").value = "";
+        var pTag, spanTag, task, divCon, remTag, remove;
+        pTag = document.createElement("p");
+        pTag.style.marginTop = "10px";
+        pTag.style.fontSize = "1.5rem";
+        pTag.style.padding = "10px";
+        spanTag = document.createElement("span");
+        task = document.createTextNode(inputData);
+        spanTag.appendChild(task);
+        pTag.appendChild(spanTag);
+        divCon = document.getElementById("div");
+        divCon.appendChild(pTag);
+        remTag =document.createElement("span");
+        remText = document.createTextNode("  X");
+        remTag.style.color = "red";
+        remTag.style.cursor = "pointer";
+        remTag.appendChild(remText);
+        pTag.appendChild(remTag);
+        pTag.addEventListener("click", taskDone);
+        function taskDone () {
+            spanTag.style.textDecoration = "line-through";
+            spanTag.style.color = "#229954";
         }
-        return console.log(y);
-    },
-
+        remove = document.createAttribute("onclick");
+        remove.value = "this.parentNode.remove();";
+        remTag.setAttributeNode(remove);
+    }
 }
-console.log(person.rank);
