@@ -24,58 +24,51 @@ body {
   justify-content: center;
   align-items: center; }
 
-.container {
-  width: 500px;
-  min-height: 600px;
+section {
+  width: 400px;
+  padding: 20px;
   background-color: #fff;
-  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  box-shadow: 0 0 50px 1px rgba(139, 165, 179, 0.685); }
-
-.inputBox {
-  margin-top: 40px;
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center; }
-
-.inputBox input {
-  width: 350px;
-  height: 40px;
-  font-family: iranSans;
-  background-color: #fafafa;
-  padding: 5px 10px;
-  font-size: 1.3rem;
   border-radius: 10px;
-  border: 1px solid #333;
-  color: #333; }
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.1); }
 
-.inputBox button {
-  width: 90px;
-  height: 40px;
-  background-color: #fafafa;
-  border-radius: 10px;
-  margin: 0 10px;
-  font-family: iranSans;
-  cursor: pointer;
-  border: 1px solid #333;
-  color: #333;
-  font-size: 1.2rem; }
+h1 {
+  margin-top: 10px;
+  font-size: 30px; }
 
-.inputBox button:hover {
-  background-color: rgba(225, 234, 245, 0.63); }
-
-.div {
-  width: 100%;
+ul {
+  width: 90%;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
-  align-items: center; }
+  flex-wrap: wrap; }
 
-.div p {
-  margin: 10px;
-  min-width: 90%;
-  min-height: 50px;
-  background-color: #fafafa;
-  border-radius: 10px; }
+li {
+  font-size: 16px;
+  list-style: none;
+  margin: 5px; }
+
+div {
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #f7f7f7;
+  border-radius: 10px;
+  box-shadow: 0 0 30px 1px rgba(0, 0, 0, 0.1); }
+
+div button {
+  cursor: pointer;
+  padding: 10px;
+  border: none;
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  margin: 0 10px; }
+
+div button:hover {
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.2); }
+
+span {
+  color: red;
+  cursor: pointer;
+  font-size: 12px; }
